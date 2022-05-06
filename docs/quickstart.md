@@ -148,7 +148,9 @@ yum -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-$(rpm -
 Install `ansible` and `git` and clone this repo
 
 ```
-yum -y install ansible git
+sudo dnf update -y
+sudo dnf install -y epel-release
+sudo yum -y install ansible git vim
 git clone https://github.com/redhat-cop/ocp4-helpernode
 cd ocp4-helpernode
 ```
